@@ -39,7 +39,7 @@ pipeline {
            }
        }
 
-      /* stage("SonarQube Analysis"){
+       stage("SonarQube Analysis"){
            steps {
 	           script {
 		        withSonarQubeEnv(credentialsId: 'jenkins-sonarqube-token') { 
@@ -58,7 +58,7 @@ pipeline {
 
         }
 
-        stage("Build & Push Docker Image") {
+       /* stage("Build & Push Docker Image") {
             steps {
                 script {
                     docker.withRegistry('',DOCKER_PASS) {
