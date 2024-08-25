@@ -1,7 +1,7 @@
 pipeline {
-    agent any // { label 'jenkins-agent1' }
+    agent { label 'jenkins-agent1' }
     tools {
-        jdk 'Java17'
+        jdk 'java17'
         maven 'Maven3'
     }
    /* environment {
