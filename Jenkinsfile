@@ -20,7 +20,7 @@ pipeline {
                 }
         }
 
-        stage("Checkout from SCM"){
+       /* stage("Checkout from SCM"){
                 steps {
                     git branch: 'main', credentialsId: 'github', url: 'https://github.com/Deepajagadish/register-app.git'
                 }
@@ -33,7 +33,7 @@ pipeline {
 
        }
 
-       /*stage("Test Application"){
+       stage("Test Application"){
            steps {
                  sh "mvn test"
            }
