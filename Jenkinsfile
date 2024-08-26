@@ -39,7 +39,7 @@ pipeline {
            }
        }
 
-        /*stage("SonarQube Analysis"){
+        stage("SonarQube Analysis"){
            steps {
 	           script {
 		        withSonarQubeEnv(credentialsId: 'jenkins-sonarqube-token') { 
@@ -89,7 +89,7 @@ pipeline {
                     sh "docker rmi ${IMAGE_NAME}:latest"
                }
           }
-       } */
+       } 
 
       /* stage("Trigger CD Pipeline") {
             steps {
